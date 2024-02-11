@@ -5,7 +5,7 @@
 -Cartas J , Q y K valen 10 cada una.
 -NO se puede pasar de 21 puntos o se pierde.
 -Gana quien tenga el mayor puntaje sin pasar de 21.
--Si un jugador obtiene un A's y una J al iniciar gana automaticamente. (21 natural)
+-Si un jugador obtiene un A's y una J o Q o K al iniciar gana automaticamente. (21 natural)
 
 INTEGRANTES
 
