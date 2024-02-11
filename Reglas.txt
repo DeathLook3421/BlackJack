@@ -19,3 +19,29 @@ PROCEDIMIENTO
 3. Independientemente de la decisión del jugador, la casa entonces revela su carta oculta.
 4. La casa debe tomar obligatoriamente una carta siempre que su puntaje sea menor a 17.
 5. Se hace el conteo y quien tenga un puntaje mayor gana.
+
+ELEMENTOS PARA EL PROYECTO:
+
+    +Logicos:
+
+-Mazo principal (Una lista?)
+-Mazo del jugador y su contador (una lista tal vez?)
+-Mazo de la casa y su contador (oculto en principio) (Una lista tal vez?)
+-Función que verifique si un integrante se ha pasado
+-Función para elegir una carta al azar del maso 
+-Menú para que el jugador elija si continua o para.
+-Comparador lógico que verifique quien tiene un mayor puntaje y asi mismo indique el ganador.
+
+    +Ejecución:
+
+1. El mazo será generado en secreto
+2. A la lista de el jugador serán agregadas dos cartas al azar.
+3. A la lista de la casa serán agregadas dos cartas al azar, una de ellas estará oculta.
+4. Una función verifica el puntaje del jugador.
+5. Salta el menú para que el jugador elija si tomar más cartas o no.
+6. Una función verifica si se ha pasado o no.
+    En caso de pasarse, pierde automaticamente. En caso de no, continua.
+7. La casa revela su carta oculta.
+8. Una función verifica su puntaje.
+    En caso de ser menor a 17 toma una carta obligatoriamente. De lo contrario, no toma.
+9. Se hace la comparacion final y se decide el ganador. 
