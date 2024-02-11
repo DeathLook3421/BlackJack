@@ -1,0 +1,21 @@
+#REGLAS
+
+-Cartas del 2 al 10 valen su respectivo número.
+-Carta A's vale 1 u 11 a elección del jugador.
+-Cartas J , Q y K valen 10 cada una.
+-NO se puede pasar de 21 puntos o se pierde.
+-Gana quien tenga el mayor puntaje sin pasar de 21.
+-Si un jugador obtiene un A's y una J al iniciar gana automaticamente. (21 natural)
+
+INTEGRANTES
+
+-Jugador
+-Casa/dealer
+
+PROCEDIMIENTO
+
+1. Tanto el jugador como la casa inician con dos cartas al azar, una carta de la casa está oculta mientras ambas del jugador están reveladas.
+2. El jugador debe elegir si tomar otra carta o quedarse donde está.
+3. Independientemente de la decisión del jugador, la casa entonces revela su carta oculta.
+4. La casa debe tomar obligatoriamente una carta siempre que su puntaje sea menor a 17.
+5. Se hace el conteo y quien tenga un puntaje mayor gana.
