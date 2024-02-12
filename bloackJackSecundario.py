@@ -6,7 +6,6 @@ valores = letras + [str(i) for i in range (2,11)]
 mazo = [(v,p) for v in valores for p in pintas]
 
 
-
 def repartirCartas(numCartas):
     mazoJugador = sample(mazo,numCartas)
     for carta in mazoJugador :
@@ -48,16 +47,20 @@ def plantar(mazoCasa, puntajeJ):
         puntajeCasa= sumarPuntaje(mazoCasa)
     if (puntajeCasa>21):
         print("¡LA CASA HA PERDIDO!")
+        print ("El puntaje de la casa es:" , puntajeCasa)
+        return
     difCasa= 21-puntajeCasa
     difJugador=21-puntajeJ
     if difCasa>difJugador:
         print("¡EL JUGADOR HA GANADO!")
+        print ("El puntaje de la casa es:" , puntajeCasa)
     elif difJugador>difCasa:
         print("¡LA CASA HA GANADO!")
+        print ("El puntaje de la casa es:" , puntajeCasa)
         
     else:
         print("¡HA HABIDO UN EMPATE!")
-
+        print ("El puntaje de la casa es:" , puntajeCasa)
 def iniciarJuego():
     añadirCarta = 2
     print("\t ***BIENVENIDO A BLACK JACK*** \n\t     COMENCEMOS DE UNA VEZ")        
@@ -77,6 +80,7 @@ def iniciarJuego():
         cartasJugador= cartasJugador+ repartirCartas(1)
         mostrarCartasJ(cartasJugador)
         puntajeJ=sumarPuntaje(cartasJugador)
+        
         if (puntajeJ>21):
             print("¡HAS PERDIDO!")
             break
