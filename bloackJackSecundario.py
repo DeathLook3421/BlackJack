@@ -5,7 +5,7 @@ pintas = ["picas", "treboles", "diamantes", "corazones"]
 valores = letras + [str(i) for i in range (2,11)]
 mazo = [(v,p) for v in valores for p in pintas]
 
-
+print("\t ***BIENVENIDO A BLACK JACK*** \n\t     COMENCEMOS DE UNA VEZ")
 def repartirCartas(numCartas):
     mazoJugador = sample(mazo,numCartas)
     for carta in mazoJugador :
@@ -41,10 +41,10 @@ def valorCartaL(carta):
     
 cartasJugador= repartirCartas(2)
 mostrarCartasJ(cartasJugador)
-print("aslkdjaslkd", sumarPuntaje(cartasJugador))
+print("Tienes estos puntos: ", sumarPuntaje(cartasJugador))
 cartasCasa= repartirCartas(2)
 mostrarCartasC(cartasCasa)
-print("dlaskjdlkasjd",sumarPuntaje(cartasCasa))
+
 cartasJugador= cartasJugador+ repartirCartas(1)
 mostrarCartasJ(cartasJugador) 
  
